@@ -39,3 +39,14 @@ Then your .env file should contain:
 MY_FILENAME = /tmp/tempfile.bin
 MY_VERBOSE = true
 ```
+
+If your .env file does not exists or you have type errors in it you will see an error message like:
+```
+SettingsError: 2 validation errors for MySettings
+MY_FILENAME
+  field required (type=value_error.missing)
+MY_VERBOSE
+  field required (type=value_error.missing)
+
+Hint! Verify your environment setting or the '.env' file.
+```
