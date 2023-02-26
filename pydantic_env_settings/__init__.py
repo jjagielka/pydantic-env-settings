@@ -15,7 +15,7 @@ Modifies the error description while parsing .env file:
 >>> settings = MySettings()
 Traceback (most recent call last):
 ...
-SettingsError: 2 validation errors for MySettings
+pydantic_env_settings.SettingsError: 2 validation errors for MySettings
 MY_FILENAME
   field required (type=value_error.missing)
 MY_VERBOSE
